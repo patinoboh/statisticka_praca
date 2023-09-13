@@ -3,12 +3,10 @@ import numpy as np
 def categorize_age(interval, dato):
     for i, age in enumerate(interval):
         if interval[i] <= dato["age"] <= interval[i+1]:
-            dato["age"] = age
-            return dato
+            return np.ceil(age)
 
 def categorize_ages(interval, data):
-    # for each data categorize the age        
     interval = np.append(interval, np.inf)
-    for dato in data:
-        dato = categorize_age(interval, dato)
+    for index, dato in data.iterrows():
+        data.loc[index, "age"] = categorize_age(interval, dato)
     return data
