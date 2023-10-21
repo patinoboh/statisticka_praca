@@ -1,1 +1,0 @@
-Pri podrobnejšom skúmaní datasetu som zistil, že sa v ňom nachádzaja len 40 rôznych produktov, z čoho len 5 je z kategórie oblečenia, čo je moc málo na to aby som mohol testovať prvú hypotézu. Budem sa teda viac zameriavať na druhô hypotézu.
